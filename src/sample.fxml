@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="785.0" prefWidth="1557.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample">
+   <children>
+      <Label layoutX="21.0" layoutY="14.0" prefHeight="38.0" prefWidth="156.0" text="Number of items" />
+      <Label layoutX="21.0" layoutY="52.0" prefHeight="38.0" prefWidth="98.0" text="Value" />
+      <Label layoutX="21.0" layoutY="90.0" prefHeight="38.0" prefWidth="98.0" text="Weight" />
+      <Spinner fx:id="numberSpinner" editable="true" layoutX="199.0" layoutY="20.0" />
+      <TextField fx:id="amount1" layoutX="90.0" layoutY="57.0" onKeyTyped="#amount1Check" prefHeight="26.0" prefWidth="42.0" />
+      <TextField fx:id="amount2" layoutX="143.0" layoutY="58.0" onKeyTyped="#amount2Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount3" layoutX="199.0" layoutY="58.0" onKeyTyped="#amount3Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount4" layoutX="251.0" layoutY="58.0" onKeyTyped="#amount4Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount5" layoutX="303.0" layoutY="57.0" onKeyTyped="#amount5Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount6" layoutX="356.0" layoutY="58.0" onKeyTyped="#amount6Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount7" layoutX="412.0" layoutY="58.0" onKeyTyped="#amount7Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount8" layoutX="464.0" layoutY="58.0" onKeyTyped="#amount8Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount9" layoutX="522.0" layoutY="57.0" onKeyTyped="#amount9Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount10" layoutX="574.0" layoutY="57.0" onKeyTyped="#amount10Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount11" layoutX="631.0" layoutY="58.0" onKeyTyped="#amount11Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount12" layoutX="683.0" layoutY="58.0" onKeyTyped="#amount12Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount13" layoutX="735.0" layoutY="57.0" onKeyTyped="#amount13Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount14" layoutX="787.0" layoutY="57.0" onKeyTyped="#amount14Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="amount15" layoutX="842.0" layoutY="57.0" onKeyTyped="#amount15Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight1" layoutX="90.0" layoutY="95.0" onKeyTyped="#weight1Check" prefHeight="26.0" prefWidth="42.0" />
+      <TextField fx:id="weight2" layoutX="143.0" layoutY="96.0" onKeyTyped="#weight2Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight3" layoutX="199.0" layoutY="96.0" onKeyTyped="#weight3Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight4" layoutX="251.0" layoutY="96.0" onKeyTyped="#weight4Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight5" layoutX="303.0" layoutY="95.0" onKeyTyped="#weight5Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight6" layoutX="356.0" layoutY="96.0" onKeyTyped="#weight6Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight7" layoutX="412.0" layoutY="96.0" onKeyTyped="#weight7Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight8" layoutX="464.0" layoutY="96.0" onKeyTyped="#weight8Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight9" layoutX="522.0" layoutY="95.0" onKeyTyped="#weight9Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight10" layoutX="574.0" layoutY="95.0" onKeyTyped="#weight10Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight11" layoutX="631.0" layoutY="96.0" onKeyTyped="#weight11Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight12" layoutX="683.0" layoutY="96.0" onKeyTyped="#weight12Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight13" layoutX="735.0" layoutY="95.0" onKeyTyped="#weight13Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight14" layoutX="787.0" layoutY="95.0" onKeyTyped="#weight14Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <TextField fx:id="weight15" layoutX="842.0" layoutY="95.0" onKeyTyped="#weight15Check" prefHeight="26.0" prefWidth="42.0" visible="false" />
+      <Button fx:id="proceed" layoutX="826.0" layoutY="17.0" mnemonicParsing="false" onAction="#startTable" text="OK" />
+      <TableView fx:id="tableView" editable="true" layoutX="99.0" layoutY="195.0" prefHeight="448.0" prefWidth="754.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="517.0" layoutY="14.0" prefHeight="38.0" prefWidth="138.0" text="Maximum weight" />
+      <TextField fx:id="maxWeight" layoutX="662.0" layoutY="20.0" onKeyTyped="#maxWeightCheck" prefHeight="26.0" prefWidth="123.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="173.0" layoutY="660.0" prefHeight="38.0" prefWidth="208.0" text="Maximum value achievable:" />
+      <Label alignment="CENTER_RIGHT" layoutX="968.0" layoutY="608.0" prefHeight="38.0" prefWidth="113.0" text="Items to carry:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="401.0" layoutY="660.0" opacity="0.08" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="64.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Rectangle>
+      <Label fx:id="maxValueCarry" alignment="CENTER" layoutX="406.0" layoutY="660.0" prefHeight="38.0" prefWidth="54.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="1102.0" layoutY="608.0" opacity="0.08" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="329.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Rectangle>
+      <Label fx:id="itemsToCarry" layoutX="1114.0" layoutY="608.0" prefHeight="38.0" prefWidth="310.0" />
+      <Button fx:id="nextStep" layoutX="724.0" layoutY="641.0" mnemonicParsing="false" onAction="#startNextStep" text="next step &gt;&gt;" visible="false" />
+      <Button fx:id="lastStep" layoutX="591.0" layoutY="641.0" mnemonicParsing="false" onAction="#startLastStep" text="&lt;&lt; last step" visible="false" />
+      <ImageView fx:id="bag" fitHeight="470.0" fitWidth="323.0" layoutX="1030.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bag.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="item1" alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="142.0" prefHeight="20.0" prefWidth="18.0" style="-fx-border-color: black;" text="1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item2" alignment="CENTER" contentDisplay="CENTER" layoutX="155.0" layoutY="142.0" prefHeight="20.0" prefWidth="18.0" style="-fx-border-color: black;" text="2" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item3" alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="142.0" prefHeight="20.0" prefWidth="18.0" style="-fx-border-color: black;" text="3" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item4" alignment="CENTER" contentDisplay="CENTER" layoutX="263.0" layoutY="142.0" prefHeight="20.0" prefWidth="18.0" style="-fx-border-color: black;" text="4" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item5" alignment="CENTER" contentDisplay="CENTER" layoutX="315.0" layoutY="142.0" prefHeight="20.0" prefWidth="18.0" style="-fx-border-color: black;" text="5" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item6" alignment="CENTER" contentDisplay="CENTER" layoutX="368.0" layoutY="142.0" prefHeight="20.0" prefWidth="18.0" style="-fx-border-color: black;" text="6" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item7" alignment="CENTER" contentDisplay="CENTER" layoutX="422.0" layoutY="142.0" prefHeight="20.0" prefWidth="18.0" style="-fx-border-color: black;" text="7" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item8" alignment="CENTER" contentDisplay="CENTER" layoutX="478.0" layoutY="142.0" prefHeight="20.0" prefWidth="18.0" style="-fx-border-color: black;" text="8" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item9" alignment="CENTER" contentDisplay="CENTER" layoutX="530.0" layoutY="142.0" prefHeight="20.0" prefWidth="18.0" style="-fx-border-color: black;" text="9" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item10" alignment="CENTER" contentDisplay="CENTER" layoutX="582.0" layoutY="142.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="10" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item11" alignment="CENTER" contentDisplay="CENTER" layoutX="639.0" layoutY="142.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="11" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item12" alignment="CENTER" contentDisplay="CENTER" layoutX="691.0" layoutY="142.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="12" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item13" alignment="CENTER" contentDisplay="CENTER" layoutX="743.0" layoutY="142.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="13" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item14" alignment="CENTER" contentDisplay="CENTER" layoutX="795.0" layoutY="142.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="14" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="item15" alignment="CENTER" contentDisplay="CENTER" layoutX="850.0" layoutY="142.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="15" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
